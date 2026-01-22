@@ -70,15 +70,9 @@ DATA_DIR = BASE_DIR / "data" / "processed"
 # -------------------------------
 @st.cache_resource
 def load_models():
-    try:
-        readmit_model = joblib.load(MODELS_DIR / "readmission_model_final.pkl")
-        cost_model = joblib.load(MODELS_DIR / "cost_prediction_model.pkl")
-        flow_model = joblib.load(MODELS_DIR / "patient_flow_prophet_model.pkl")
-        dengue_model = joblib.load(MODELS_DIR / "dengue_forecast_model.pkl")
-        return readmit_model, cost_model, flow_model, dengue_model
-    except Exception as e:
-        st.error(f"Error loading models: {e}")
-        return None, None, None, None
+    # Demo deployment - models not included (files too large for GitHub)
+    # App uses simplified formulas for demonstration purposes
+    return None, None, None, None
 
 readmit_model, cost_model, flow_model, dengue_model = load_models()
 
