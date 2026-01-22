@@ -1,0 +1,5 @@
+Department,Base_Allocation,Optimized_Allocation,Expected_Demand,Utilization_Rate
+General,200,210,195.5,93.1
+ICU,75,80,72.3,90.4
+Emergency,125,120,115.8,96.5
+Surgery,100,90,88.4,98.2

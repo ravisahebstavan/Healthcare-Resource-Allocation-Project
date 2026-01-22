@@ -13,13 +13,25 @@ ENV/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
 
-# Data files (too large for GitHub)
+# Data files - Allow small sample files, ignore large originals
 data/raw/*
-data/processed/*
 !data/raw/.gitkeep
-!data/processed/.gitkeep
-*.csv
-*.zip
+
+# Processed data - ignore large files specifically
+data/processed/diabetic_data.csv
+data/processed/features.csv
+data/processed/target.csv
+data/processed/costs.csv
+data/processed/high_priority_patients.csv
+data/processed/daily_admissions.csv
+data/processed/IDs_mapping.csv
+
+# Keep sample files for deployment (these will be committed):
+# data/processed/integrated_predictions.csv
+# data/processed/7day_forecast.csv
+# data/processed/bed_allocation_recommendations.csv
+# data/processed/dengue_singapore.csv
+# data/processed/dengue_alerts.csv
 
 # Model files (too large)
 models/*
