@@ -1,0 +1,39 @@
+
+# HOSPITAL READMISSION PREDICTION - PROJECT SUMMARY
+================================================================
+
+## Dataset
+- Total Records: 101,766
+- Features: 52
+- Target: Early readmission (<30 days)
+- Class Balance: 11.16% readmitted
+
+## Models Trained
+1. Logistic Regression (Baseline): AUC = 0.6522
+2. XGBoost: AUC = 0.6806
+3. LightGBM: AUC = 0.6857
+
+## Best Model
+- Model: LightGBM
+- Validation AUC: 0.6857
+- Test AUC: 0.6759
+- F1-Score: 0.2755
+
+## Key Accomplishments
+[DONE] Complete ML pipeline from raw data to deployed model
+[DONE] Feature engineering (52 features created)
+[DONE] Model comparison and selection
+[DONE] Hyperparameter tuning attempted
+[DONE] SHAP interpretability analysis
+[DONE] Proper train/validation/test split methodology
+
+## Portfolio Value
+This project demonstrates:
+- Healthcare domain knowledge
+- Handling imbalanced data
+- Model interpretability (SHAP)
+- Production-ready ML practices
+- Real-world healthcare application
+
+================================================================
+Generated: 2026-01-22 12:44:33.029187
